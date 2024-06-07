@@ -1,6 +1,5 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { Container, Nav, Navbar, Image } from "react-bootstrap";
+import sr from "../assests/Sr.png";
 
 const NavigationBar = () => {
   return (
@@ -11,12 +10,22 @@ const NavigationBar = () => {
       fixed="top"
     >
       <Container>
-        <Navbar.Brand href="#home" className="fs-3">
+        <Navbar.Brand href="#home" className="fs-2">
+          <Image
+            style={{
+              margin: "10px",
+              width: "auto",
+              height: "40px",
+              filter: "invert(100%)",
+            }}
+            src={sr}
+            alt="sr"
+          />
           Sri Ram Singarapu
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto fs-5 me-5">
+          <Nav className="ms-auto fs-5 me-5 bold-text">
             <Nav.Link href="#home" className="me-4">
               Home
             </Nav.Link>

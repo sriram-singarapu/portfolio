@@ -15,13 +15,21 @@ const Home = () => {
           <Row className="align-items-center">
             <Col xs={12} md={8}>
               <Card.Title>
-                <h1>Front-End React Developer</h1>
+                <strong>
+                  <h1>Front-End React Developer</h1>
+                </strong>
               </Card.Title>
               <Card.Text style={{ margin: "2% 0% 2% 0%" }}>
-                Hi, I'm Sri Ram Singarapu. A passionate Front-end React
-                developer based in Hyderabad.
+                <h6>
+                  Hi, I'm Sri Ram Singarapu. A passionate Front-end React
+                  developer based in Hyderabad.
+                </h6>
               </Card.Text>
-              <Button style={{ margin: "2% 0% 2% 0%" }} variant="dark">
+              <Button
+                style={{ margin: "2% 0% 2% 0%" }}
+                variant="dark"
+                href="#contact"
+              >
                 Contact me
               </Button>
               <div style={{ margin: "10% 2% 2% 2%" }}>

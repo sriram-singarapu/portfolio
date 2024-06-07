@@ -44,6 +44,7 @@ const Skills = () => {
                 style={{
                   width: "100%",
                   maxWidth: "150px",
+                  border: "1px solid black",
                 }}
               >
                 <Card.Body

@@ -41,23 +41,33 @@ const Projects = () => {
       <h2 className="text-center text-6xl text-emerald-500 font-bold mb-5">
         Projects
       </h2>
-      <Card style={{ width: "80%", margin: "3% 12% 3% 12%", padding: "1%" }}>
-        <Container>
+
+      <Card
+        style={{
+          width: "80%",
+          margin: "3% 10%",
+          padding: "1%",
+          border: "2px solid skyblue",
+        }}
+      >
+        <Container fluid className="p-0">
           <Row className="align-items-center">
-            <Card.Title className="text-center">
-              <strong>Expense tracker</strong>
-            </Card.Title>
-            <Col xs={12} md={5}>
+            <Col xs={12}>
+              <Card.Title className="text-center mb-4">
+                <strong>Expense tracker</strong>
+              </Card.Title>
+            </Col>
+            <Col xs={12} md={5} className="mb-3 mb-md-0">
               <video style={{ width: "100%" }} controls autoPlay loop muted>
                 <source src={expense} type="video/mp4" allowFullScreen />
               </video>
             </Col>
-            <Col xs={12} md={6} style={{ margin: "1%" }}>
-              <Card.Text>
+            <Col xs={12} md={7}>
+              <Card.Text className="mb-4">
                 <li>
                   An interactive expense tracker using React JS with a modular,
                   component-based architecture.
-                </li>{" "}
+                </li>
                 <li>
                   Utilized state management techniques for efficient data
                   handling and integrated intuitive UI components for expense
@@ -68,7 +78,7 @@ const Projects = () => {
                 GitHub repo <FaGithub />
               </Button>
               <Button
-                style={{ margin: "5%" }}
+                style={{ marginleft: "5%" }}
                 variant="link"
                 onClick={ExpenseLiveServer}
               >
@@ -79,39 +89,22 @@ const Projects = () => {
         </Container>
       </Card>
 
-      <br />
-
-      <Card style={{ width: "80%", margin: "3% 12% 3% 12%", padding: "1%" }}>
-        <Container>
+      <Card
+        style={{
+          width: "80%",
+          margin: "3% 10%",
+          padding: "1%",
+          border: "2px solid skyblue",
+        }}
+      >
+        <Container fluid className="p-0">
           <Row className="align-items-center">
-            <Card.Title className="text-center">
-              <strong>Todo App</strong>
-            </Card.Title>
-            <Col xs={12} md={6} style={{ margin: "1%" }}>
-              <Card.Text>
-                <li>
-                  {" "}
-                  A dynamic Todo application with task management features using
-                  React useState hook for state management.
-                </li>
-                <li>
-                  {" "}
-                  Implementing create, read, update, and delete (CRUD)
-                  operations ensures comprehensive task management.
-                </li>
-              </Card.Text>
-              <Button variant="light" onClick={TodoGitHub}>
-                GitHub repo <FaGithub />
-              </Button>
-              <Button
-                style={{ margin: "5%" }}
-                variant="link"
-                onClick={TodoLiveServer}
-              >
-                Live server
-              </Button>
+            <Col xs={12}>
+              <Card.Title className="text-center mb-4">
+                <strong>Todo App</strong>
+              </Card.Title>
             </Col>
-            <Col xs={12} md={5}>
+            <Col xs={12} md={5} className="mb-3 mb-md-0">
               <video
                 style={{ width: "100%", margin: "1%" }}
                 controls
@@ -122,27 +115,57 @@ const Projects = () => {
                 <source src={todo} type="video/mp4" allowFullScreen />
               </video>
             </Col>
+            <Col xs={12} md={7}>
+              <Card.Text className="mb-4">
+                <li>
+                  A dynamic Todo application with task management features using
+                  React useState hook for state management.
+                </li>
+                <li>
+                  Implementing create, read, update, and delete (CRUD)
+                  operations ensures comprehensive task management.
+                </li>
+              </Card.Text>
+              <Button variant="light" onClick={TodoGitHub}>
+                GitHub repo <FaGithub />
+              </Button>
+              <Button
+                style={{ marginleft: "5%" }}
+                variant="link"
+                onClick={TodoLiveServer}
+              >
+                Live server
+              </Button>
+            </Col>
           </Row>
         </Container>
       </Card>
 
-      <br />
-      <Card style={{ width: "80%", margin: "3% 12% 3% 12%", padding: "1%" }}>
-        <Container>
+      <Card
+        style={{
+          width: "80%",
+          margin: "3% 10%",
+          padding: "1%",
+          border: "2px solid skyblue",
+        }}
+      >
+        <Container fluid className="p-0">
           <Row className="align-items-center">
-            <Card.Title className="text-center">
-              <strong>Food order app</strong>
-            </Card.Title>
-            <Col xs={12} md={5}>
+            <Col xs={12}>
+              <Card.Title className="text-center mb-4">
+                <strong>Food order app</strong>
+              </Card.Title>
+            </Col>
+            <Col xs={12} md={5} className="mb-3 mb-md-0">
               <video style={{ width: "100%" }} controls autoPlay loop muted>
                 <source src={restaurant} type="video/mp4" allowFullScreen />
               </video>
             </Col>
-            <Col xs={12} md={6} style={{ margin: "1%" }}>
-              <Card.Text>
+            <Col xs={12} md={7}>
+              <Card.Text className="mb-4">
                 <li>
                   Implemented a responsive cart system using React Context API.
-                </li>{" "}
+                </li>
                 <li>
                   Integrated modal components using react dom to display cart
                   and user interaction.
@@ -152,7 +175,7 @@ const Projects = () => {
                 GitHub repo <FaGithub />
               </Button>
               <Button
-                style={{ margin: "5%" }}
+                style={{ marginleft: "5%" }}
                 variant="link"
                 onClick={FoodLiveServer}
               >
