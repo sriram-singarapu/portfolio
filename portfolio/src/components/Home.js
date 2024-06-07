@@ -1,11 +1,11 @@
 import React from "react";
-import photo from "./assests/photo.png";
-import html from "./assests/html.png";
-import { FaGithub } from "react-icons/fa";
-import css from "./assests/css.png";
-import bootstrap from "./assests/bootstrap.png";
-import js from "./assests/js.png";
-import react from "./assests/react.png";
+import photo from "../assests/photo.png";
+import html from "../assests/html.png";
+// import { FaGithub } from "react-icons/fa";
+import css from "../assests/css.png";
+import bootstrap from "../assests/bootstrap.png";
+import js from "../assests/js.png";
+import react from "../assests/react.png";
 import { Button, Card, Container, Row, Col, Image } from "react-bootstrap";
 
 const Home = () => {
@@ -18,11 +18,13 @@ const Home = () => {
               <Card.Title>
                 <h1>Front-End React Developer</h1>
               </Card.Title>
-              <Card.Text>
+              <Card.Text style={{ margin: "2% 0% 2% 0%" }}>
                 Hi, I'm Sri Ram Singarapu. A passionate Front-end React
                 developer based in Hyderabad.
               </Card.Text>
-              <Button variant="dark">Contact me</Button>
+              <Button style={{ margin: "2% 0% 2% 0%" }} variant="dark">
+                Contact me
+              </Button>
               <div style={{ margin: "10% 2% 2% 2%" }}>
                 <strong>Tech Stack | </strong>
                 <Image
@@ -49,9 +51,6 @@ const Home = () => {
                   style={{ margin: "10px", width: "auto", height: "30px" }}
                   src={bootstrap}
                   alt="bootstrap"
-                />
-                <FaGithub
-                  style={{ margin: "10px", width: "auto", height: "30px" }}
                 />
               </div>
             </Col>

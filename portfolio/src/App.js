@@ -1,7 +1,8 @@
 import React from "react";
-import NavigationBar from "./Navigationbar";
-import Home from "./Home";
-import About from "./About";
+import NavigationBar from "./components/Navigationbar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Skills from "./components/Skills";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <NavigationBar />
       <Home />
       <About />
+      <Skills />
     </div>
   );
 };
