@@ -1,7 +1,6 @@
 import React from "react";
 import photo from "../assests/photo.png";
 import html from "../assests/html.png";
-// import { FaGithub } from "react-icons/fa";
 import css from "../assests/css.png";
 import bootstrap from "../assests/bootstrap.png";
 import js from "../assests/js.png";
