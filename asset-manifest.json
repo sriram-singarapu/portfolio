@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.973afc19.css",
+    "main.js": "/portfolio/static/js/main.dc8390e6.js",
+    "static/media/Expense.mp4": "/portfolio/static/media/Expense.6ed0328d6c6227ab5a68.mp4",
+    "static/media/todo app.mp4": "/portfolio/static/media/todo app.5f30c2affb7517311265.mp4",
+    "static/media/Restaurant.mp4": "/portfolio/static/media/Restaurant.c59d96dbda8a6de049ad.mp4",
+    "static/media/about.png": "/portfolio/static/media/about.65a6c4dc228009c8106f.png",
+    "static/media/photo.png": "/portfolio/static/media/photo.a4ed459af6e97402e767.png",
+    "static/media/SriRam-Singarapu.pdf": "/portfolio/static/media/SriRam-Singarapu.f21cab88f05e7348cddc.pdf",
+    "static/media/react.png": "/portfolio/static/media/react.ee618307265038b97d52.png",
+    "static/media/mysql.png": "/portfolio/static/media/mysql.60fe462b4dec8bbc0292.png",
+    "static/media/software.png": "/portfolio/static/media/software.c77dad4810f03498a19c.png",
+    "static/media/bootstrap.png": "/portfolio/static/media/bootstrap.f132cb791703420e69ca.png",
+    "static/media/Sr.png": "/portfolio/static/media/Sr.1ce04b6a163fd6376c3b.png",
+    "static/media/azure.png": "/portfolio/static/media/azure.434dc0708f0736a029b7.png",
+    "static/media/css.png": "/portfolio/static/media/css.9ffc6994f64309a89fa4.png",
+    "static/media/js.png": "/portfolio/static/media/js.3dfb665e058d08c99f28.png",
+    "index.html": "/portfolio/index.html",
+    "main.973afc19.css.map": "/portfolio/static/css/main.973afc19.css.map",
+    "main.dc8390e6.js.map": "/portfolio/static/js/main.dc8390e6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.973afc19.css",
+    "static/js/main.dc8390e6.js"
+  ]
+}
