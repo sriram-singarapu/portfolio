@@ -5,7 +5,9 @@ import css from "../assests/css.png";
 import bootstrap from "../assests/bootstrap.png";
 import js from "../assests/js.png";
 import react from "../assests/react.png";
+import resume from "../assests/SriRam-Singarapu.pdf";
 import { Button, Card, Container, Row, Col, Image } from "react-bootstrap";
+import { FaRegMessage } from "react-icons/fa6";
 
 const Home = () => {
   return (
@@ -15,24 +17,29 @@ const Home = () => {
           <Row className="align-items-center">
             <Col xs={12} md={8}>
               <Card.Title>
-                <strong>
-                  <h1>Front-End React Developer</h1>
-                </strong>
+                <h1>Front-End React Developer</h1>
               </Card.Title>
               <Card.Text style={{ margin: "2% 0% 2% 0%" }}>
-                <h6>
-                  Hi, I'm Sri Ram Singarapu. A passionate Front-end React
-                  developer based in Hyderabad.
-                </h6>
+                Hi, I'm Sri Ram Singarapu. A passionate Front-end React
+                developer based in Hyderabad.
               </Card.Text>
               <Button
-                style={{ margin: "2% 0% 2% 0%" }}
+                style={{ margin: "2% 2% 0 0" }}
                 variant="dark"
                 href="#contact"
               >
-                Contact me
+                {" "}
+                Hire Me <FaRegMessage />
               </Button>
-              <div style={{ margin: "10% 2% 2% 2%" }}>
+              <Button
+                style={{ marginTop: "2%" }}
+                variant="dark"
+                href={resume}
+                download="SriRam-Singarapu-resume"
+              >
+                Download CV
+              </Button>
+              <div style={{ margin: "5% 2% 2% 2%" }}>
                 <strong>Tech Stack | </strong>
                 <Image
                   style={{ margin: "10px", width: "auto", height: "28px" }}
@@ -63,7 +70,7 @@ const Home = () => {
             </Col>
 
             <Col xs={12} md={4}>
-              <Card.Img src={photo} roundedCircle />
+              <Card.Img src={photo} />
             </Col>
           </Row>
         </Container>

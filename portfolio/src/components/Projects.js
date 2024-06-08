@@ -4,187 +4,114 @@ import { FaGithub } from "react-icons/fa";
 import todo from "../projectsvideo/todo app.mp4";
 import expense from "../projectsvideo/Expense.mp4";
 import restaurant from "../projectsvideo/Restaurant.mp4";
+import "./Projects.css";
+
+const projectsData = [
+  {
+    title: "Expense tracker",
+    video: expense,
+    description: [
+      "An interactive expense tracker using React JS with a modular, component-based architecture.",
+      "Utilized state management techniques for efficient data handling and integrated intuitive UI components for expense management and dynamic visualization.",
+    ],
+    githubLink: "https://github.com/sriram-singarapu/ExpenseTracker",
+    liveServerLink: "https://sriram-singarapu.github.io/ExpenseTracker/",
+  },
+  {
+    title: "Todo App",
+    video: todo,
+    description: [
+      "A dynamic Todo application with task management features using React useState hook for state management.",
+      "Implementing create, read, update, and delete (CRUD) operations ensures comprehensive task management.",
+    ],
+    githubLink: "https://github.com/sriram-singarapu/react-todo",
+    liveServerLink: "https://sriram-singarapu.github.io/react-todo/",
+  },
+  {
+    title: "Food order app",
+    video: restaurant,
+    description: [
+      "Implemented a responsive cart system using React Context API.",
+      "Integrated modal components using react dom to display cart and user interaction.",
+    ],
+    githubLink: "https://github.com/sriram-singarapu/react-restaurant",
+    liveServerLink: "https://sriram-singarapu.github.io/react-restaurant/",
+  },
+];
 
 const Projects = () => {
-  const ExpenseGitHub = () => {
-    window.open("https://github.com/sriram-singarapu/ExpenseTracker", "_blank");
+  const handleGitHubClick = (url) => {
+    window.open(url, "_blank");
   };
 
-  const ExpenseLiveServer = () => {
-    window.open("https://sriram-singarapu.github.io/ExpenseTracker/", "_blank");
-  };
-
-  const TodoGitHub = () => {
-    window.open("https://github.com/sriram-singarapu/react-todo", "_blank");
-  };
-
-  const TodoLiveServer = () => {
-    window.open("https://sriram-singarapu.github.io/react-todo/", "_blank");
-  };
-
-  const FoodGitHub = () => {
-    window.open(
-      "https://github.com/sriram-singarapu/react-restaurant",
-      "_blank"
-    );
-  };
-
-  const FoodLiveServer = () => {
-    window.open(
-      "https://sriram-singarapu.github.io/react-restaurant/",
-      "_blank"
-    );
+  const handleLiveServerClick = (url) => {
+    window.open(url, "_blank");
   };
 
   return (
-    <section id="projects" style={{ margin: "5%" }}>
-      <h2 className="text-center text-6xl text-emerald-500 font-bold mb-5">
-        Projects
-      </h2>
-
-      <Card
+    <section id="projects" className="projects-section">
+      <div
         style={{
-          width: "80%",
-          margin: "3% 10%",
-          padding: "1%",
-          border: "2px solid skyblue",
+          width: "100%",
+          backgroundColor: "#A7F3D0",
+          padding: "10px",
+          textAlign: "center",
+          margin: "0%",
         }}
       >
-        <Container fluid className="p-0">
-          <Row className="align-items-center">
-            <Col xs={12}>
-              <Card.Title className="text-center mb-4">
-                <strong>Expense tracker</strong>
-              </Card.Title>
-            </Col>
-            <Col xs={12} md={5} className="mb-3 mb-md-0">
-              <video style={{ width: "100%" }} controls autoPlay loop muted>
-                <source src={expense} type="video/mp4" allowFullScreen />
-              </video>
-            </Col>
-            <Col xs={12} md={7}>
-              <Card.Text className="mb-4">
-                <li>
-                  An interactive expense tracker using React JS with a modular,
-                  component-based architecture.
-                </li>
-                <li>
-                  Utilized state management techniques for efficient data
-                  handling and integrated intuitive UI components for expense
-                  management and dynamic visualization.
-                </li>
-              </Card.Text>
-              <Button variant="light" onClick={ExpenseGitHub}>
-                GitHub repo <FaGithub />
-              </Button>
-              <Button
-                style={{ marginleft: "5%" }}
-                variant="link"
-                onClick={ExpenseLiveServer}
-              >
-                Live server
-              </Button>
-            </Col>
-          </Row>
-        </Container>
-      </Card>
-
-      <Card
-        style={{
-          width: "80%",
-          margin: "3% 10%",
-          padding: "1%",
-          border: "2px solid skyblue",
-        }}
-      >
-        <Container fluid className="p-0">
-          <Row className="align-items-center">
-            <Col xs={12}>
-              <Card.Title className="text-center mb-4">
-                <strong>Todo App</strong>
-              </Card.Title>
-            </Col>
-            <Col xs={12} md={5} className="mb-3 mb-md-0">
-              <video
-                style={{ width: "100%", margin: "1%" }}
-                controls
-                autoPlay
-                loop
-                muted
-              >
-                <source src={todo} type="video/mp4" allowFullScreen />
-              </video>
-            </Col>
-            <Col xs={12} md={7}>
-              <Card.Text className="mb-4">
-                <li>
-                  A dynamic Todo application with task management features using
-                  React useState hook for state management.
-                </li>
-                <li>
-                  Implementing create, read, update, and delete (CRUD)
-                  operations ensures comprehensive task management.
-                </li>
-              </Card.Text>
-              <Button variant="light" onClick={TodoGitHub}>
-                GitHub repo <FaGithub />
-              </Button>
-              <Button
-                style={{ marginleft: "5%" }}
-                variant="link"
-                onClick={TodoLiveServer}
-              >
-                Live server
-              </Button>
-            </Col>
-          </Row>
-        </Container>
-      </Card>
-
-      <Card
-        style={{
-          width: "80%",
-          margin: "3% 10%",
-          padding: "1%",
-          border: "2px solid skyblue",
-        }}
-      >
-        <Container fluid className="p-0">
-          <Row className="align-items-center">
-            <Col xs={12}>
-              <Card.Title className="text-center mb-4">
-                <strong>Food order app</strong>
-              </Card.Title>
-            </Col>
-            <Col xs={12} md={5} className="mb-3 mb-md-0">
-              <video style={{ width: "100%" }} controls autoPlay loop muted>
-                <source src={restaurant} type="video/mp4" allowFullScreen />
-              </video>
-            </Col>
-            <Col xs={12} md={7}>
-              <Card.Text className="mb-4">
-                <li>
-                  Implemented a responsive cart system using React Context API.
-                </li>
-                <li>
-                  Integrated modal components using react dom to display cart
-                  and user interaction.
-                </li>
-              </Card.Text>
-              <Button variant="light" onClick={FoodGitHub}>
-                GitHub repo <FaGithub />
-              </Button>
-              <Button
-                style={{ marginleft: "5%" }}
-                variant="link"
-                onClick={FoodLiveServer}
-              >
-                Live server
-              </Button>
-            </Col>
-          </Row>
-        </Container>
-      </Card>
+        <h2
+          className="text-center"
+          style={{
+            fontSize: "30px",
+            color: "#10B981",
+            fontWeight: "bold",
+          }}
+        >
+          Projects
+        </h2>
+      </div>
+      {projectsData.map((project, index) => (
+        <Card key={index} className="project-card">
+          <Container fluid className="p-0">
+            <Row className="align-items-center">
+              <Col xs={12}>
+                <Card.Title className="text-center mb-4">
+                  <strong>{project.title}</strong>
+                </Card.Title>
+              </Col>
+              <Col xs={12} md={5} className="mb-3 mb-md-0">
+                <video className="project-video" controls autoPlay loop muted>
+                  <source
+                    src={project.video}
+                    type="video/mp4"
+                    allowFullScreen
+                  />
+                </video>
+              </Col>
+              <Col xs={12} md={7}>
+                <Card.Text className="mb-4">
+                  {project.description.map((desc, descIndex) => (
+                    <li key={descIndex}>{desc}</li>
+                  ))}
+                </Card.Text>
+                <Button
+                  variant="light"
+                  onClick={() => handleGitHubClick(project.githubLink)}
+                >
+                  GitHub repo <FaGithub />
+                </Button>
+                <Button
+                  className="ml-3"
+                  variant="link"
+                  onClick={() => handleLiveServerClick(project.liveServerLink)}
+                >
+                  Live server
+                </Button>
+              </Col>
+            </Row>
+          </Container>
+        </Card>
+      ))}
     </section>
   );
 };

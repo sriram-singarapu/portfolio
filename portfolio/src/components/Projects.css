@@ -1,0 +1,37 @@
+.projects-section {
+  margin: 5%;
+}
+
+.project-card {
+  width: 80%;
+  margin: 3% auto;
+  padding: 1%;
+  border: 2px solid skyblue;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-card {
+    width: 100%;
+  }
+
+  .project-video {
+    margin-bottom: 20px;
+  }
+}

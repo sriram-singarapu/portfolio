@@ -1,11 +1,16 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { FaGithub } from "react-icons/fa";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { MdAddCall } from "react-icons/md";
+import software from "../assests/software.png";
+import { Container, Row, Col, Button, Image } from "react-bootstrap";
 
 const Contact = () => {
   const GitHub = () => {
     window.open("https://github.com/sriram-singarapu", "_blank");
+  };
+  const LinkedIn = () => {
+    window.open("https://www.linkedin.com/in/sriram-singarapu/", "_blank");
   };
 
   const form = useRef();
@@ -22,57 +27,91 @@ const Contact = () => {
           console.log("SUCCESS!");
           console.log("message sent");
           e.target.reset();
+          alert("Message sent");
         },
         (error) => {
           console.log("FAILED...", error.text);
+          alert("deliver failed");
         }
       );
   };
 
   return (
-    <section id="contact" style={{ margin: "0% 12% 5% 12%" }}>
-      <h2 className="text-center" style={{ marginBottom: "5%" }}>
+    <section
+      id="contact"
+      style={{
+        margin: "0% 12% 5% 12%",
+        border: "1px solid red",
+        padding: "2%",
+      }}
+    >
+      <h2
+        className="text-center"
+        style={{
+          fontSize: "30px",
+          color: "#10B981",
+          fontWeight: "bold",
+          marginBottom: "2%",
+          backgroundColor: "#A7F3D0",
+          padding: "10px",
+        }}
+      >
         Contact Information
       </h2>
+
       <Container>
         <Row>
           <Col md={6}>
-            <Row>
-              <Col>
-                <Button
-                  variant="light"
-                  href="mailto:sriramsingarapu2@gmail.com"
-                >
-                  sriramsingarapu2@gmail.com
-                </Button>
-              </Col>
-              <Col>
-                <Button variant="light" href="tel:+919866521020">
-                  +919866521020
-                </Button>
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <Button variant="light" onClick={GitHub}>
-                  GitHub <FaGithub />
-                </Button>
-              </Col>
-              <Col md={6}>
-                {/* Add another button here if needed or leave it empty */}
-              </Col>
-            </Row>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <Image src={software} style={{ width: "90%" }}></Image>
+              <Button
+                variant="light"
+                href="mailto:sriramsingarapu2@gmail.com"
+                style={{ marginBottom: "2%", width: "100%" }}
+              >
+                <FaEnvelope /> sriramsingarapu2@gmail.com
+              </Button>
+              <Button
+                variant="light"
+                href="tel:+919866521020"
+                style={{ marginBottom: "2%", width: "100%" }}
+              >
+                <MdAddCall /> +919866521020
+              </Button>
+              <Button
+                variant="light"
+                onClick={GitHub}
+                style={{ marginBottom: "2%", width: "100%" }}
+              >
+                <FaGithub /> GitHub
+              </Button>
+              <Button
+                variant="light"
+                onClick={LinkedIn}
+                style={{ marginBottom: "2%", width: "100%" }}
+              >
+                <FaLinkedin /> LinkedIn
+              </Button>
+            </div>
           </Col>
-          <Col md={6}>
-            <h2>Get in Touch</h2>
+          <Col md={6} style={{ border: "3px solid", padding: "3%" }}>
+            <h4 className="text-center">Get in Touch</h4>
             <form
               ref={form}
               onSubmit={sendEmail}
-              style={{ display: "flex", flexDirection: "column", gap: "1rem" }}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "0.5rem",
+              }}
             >
-              <label style={{ fontWeight: "bold", marginBottom: "0.5rem" }}>
-                Name
-              </label>
+              <label style={{ fontWeight: "bold" }}>Name</label>
               <input
                 type="text"
                 name="user_name"
@@ -83,9 +122,7 @@ const Contact = () => {
                   border: "1px solid #ccc",
                 }}
               />
-              <label style={{ fontWeight: "bold", marginBottom: "0.5rem" }}>
-                Email
-              </label>
+              <label style={{ fontWeight: "bold" }}>Email</label>
               <input
                 type="email"
                 name="user_email"
@@ -96,9 +133,7 @@ const Contact = () => {
                   border: "1px solid #ccc",
                 }}
               />
-              <label style={{ fontWeight: "bold", marginBottom: "0.5rem" }}>
-                Message
-              </label>
+              <label style={{ fontWeight: "bold" }}>Message</label>
               <textarea
                 name="message"
                 rows="5"
@@ -119,7 +154,7 @@ const Contact = () => {
                   borderRadius: "5px",
                 }}
               >
-                Submit
+                Send
               </Button>
             </form>
           </Col>
