@@ -31,8 +31,8 @@ const projectsData = [
     title: "Food order app",
     video: restaurant,
     description: [
-      "Implemented a responsive cart system using React Context API.",
-      "Integrated modal components using react dom to display cart and user interaction.",
+      "Implemented a responsive cart system using React Context API, facilitating centralized management of cart state across components",
+      "Integrated modal components using ReactDOM for interactive cart display, enhancing user experience with dynamic overlays for seamless interaction.",
     ],
     githubLink: "https://github.com/sriram-singarapu/react-restaurant",
     liveServerLink: "https://sriram-singarapu.github.io/react-restaurant/",

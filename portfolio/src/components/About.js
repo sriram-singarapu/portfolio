@@ -11,7 +11,7 @@ const About = () => {
             <Col xs={12} md={5}>
               <Card.Img
                 style={{
-                  width: "90%",
+                  width: "80%",
                   height: "80%",
                   borderRadius: "10%",
                 }}
