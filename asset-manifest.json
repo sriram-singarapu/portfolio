@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5a613eff.css",
-    "main.js": "/portfolio/static/js/main.ee54047c.js",
+    "main.css": "/portfolio/static/css/main.5d3d61d9.css",
+    "main.js": "/portfolio/static/js/main.91b561d8.js",
     "static/media/Expense.mp4": "/portfolio/static/media/Expense.6ed0328d6c6227ab5a68.mp4",
     "static/media/Portfolio.mp4": "/portfolio/static/media/Portfolio.531e8ca7bdd485acf34d.mp4",
     "static/media/todo app.mp4": "/portfolio/static/media/todo app.5f30c2affb7517311265.mp4",
     "static/media/Restaurant.mp4": "/portfolio/static/media/Restaurant.c59d96dbda8a6de049ad.mp4",
+    "static/media/grp-ma.png": "/portfolio/static/media/grp-ma.93775b8022bcce95bb5e.png",
+    "static/media/satya-ma.png": "/portfolio/static/media/satya-ma.0fe1faf4cf6a292bc2ce.png",
+    "static/media/sr-ma.png": "/portfolio/static/media/sr-ma.14a1848325a69a0b51dd.png",
     "static/media/about.png": "/portfolio/static/media/about.65a6c4dc228009c8106f.png",
     "static/media/photo.png": "/portfolio/static/media/photo.a4ed459af6e97402e767.png",
     "static/media/css-tailwind.png": "/portfolio/static/media/css-tailwind.f0f26047a8933b822dae.png",
@@ -19,11 +22,11 @@
     "static/media/css.png": "/portfolio/static/media/css.9ffc6994f64309a89fa4.png",
     "static/media/js.png": "/portfolio/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/portfolio/index.html",
-    "main.5a613eff.css.map": "/portfolio/static/css/main.5a613eff.css.map",
-    "main.ee54047c.js.map": "/portfolio/static/js/main.ee54047c.js.map"
+    "main.5d3d61d9.css.map": "/portfolio/static/css/main.5d3d61d9.css.map",
+    "main.91b561d8.js.map": "/portfolio/static/js/main.91b561d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a613eff.css",
-    "static/js/main.ee54047c.js"
+    "static/css/main.5d3d61d9.css",
+    "static/js/main.91b561d8.js"
   ]
 }
