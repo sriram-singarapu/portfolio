@@ -27,19 +27,54 @@ const NavigationBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home" className="me-2">
+            <Nav.Link
+              href="#home"
+              className="me-2"
+              style={{
+                fontSize: "16px",
+                fontWeight: "bold",
+              }}
+            >
               Home
             </Nav.Link>
-            <Nav.Link href="#about" className="me-2">
+            <Nav.Link
+              href="#about"
+              className="me-2"
+              style={{
+                fontSize: "16px",
+                fontWeight: "bold",
+              }}
+            >
               About
             </Nav.Link>
-            <Nav.Link href="#skills" className="me-2">
+            <Nav.Link
+              href="#skills"
+              className="me-2"
+              style={{
+                fontSize: "16px",
+                fontWeight: "bold",
+              }}
+            >
               Skills
             </Nav.Link>
-            <Nav.Link href="#projects" className="me-2">
+            <Nav.Link
+              href="#projects"
+              className="me-2"
+              style={{
+                fontSize: "16px",
+                fontWeight: "bold",
+              }}
+            >
               Projects
             </Nav.Link>
-            <Nav.Link href="#contact" className="me-2">
+            <Nav.Link
+              href="#contact"
+              className="me-2"
+              style={{
+                fontSize: "16px",
+                fontWeight: "bold",
+              }}
+            >
               Contact
             </Nav.Link>
           </Nav>

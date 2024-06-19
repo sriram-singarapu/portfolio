@@ -24,7 +24,7 @@ const Skills = () => {
   const cardStyle = {
     width: "100%",
     maxWidth: "150px",
-    border: "1px solid black",
+    border: "1px solid skyblue",
     transition: "transform 0.3s, box-shadow 0.3s",
   };
 
@@ -61,10 +61,10 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <Col
               key={index}
-              xs={12}
+              xs={6}
               sm={6}
-              md={4}
-              lg={3}
+              md={5}
+              lg={2}
               xl={2}
               className="mb-4"
               style={{ display: "flex", justifyContent: "center" }}
@@ -94,8 +94,8 @@ const Skills = () => {
                       src={skill.image}
                       alt={skill.name}
                       style={{
-                        width: "100px",
-                        height: "100px",
+                        width: "100%",
+                        height: "100%",
                         objectFit: "contain",
                       }}
                     />

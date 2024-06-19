@@ -11,18 +11,33 @@ const About = () => {
             <Col xs={12} md={5}>
               <Card.Img
                 style={{
-                  width: "80%",
-                  height: "80%",
+                  width: "90%",
+
                   borderRadius: "10%",
+                  margin: "5%",
                 }}
                 src={about}
               />
             </Col>
             <Col xs={12} md={7}>
               <Card.Title>
-                <h3>About Me</h3>
+                <h3
+                  style={{
+                    marginBottom: "2%",
+                    fontWeight: "bold",
+                    color: "#10B981",
+                    padding: "10px",
+                    backgroundColor: "#A7F3D0",
+                  }}
+                >
+                  About Me
+                </h3>
               </Card.Title>
-              <Card.Text>
+              <Card.Text
+                style={{
+                  fontSize: "16px",
+                }}
+              >
                 As a fresher, I have a strong foundation in web development,
                 focusing on creating dynamic and user-friendly web applications.
                 I have hands-on experience with various technologies, including

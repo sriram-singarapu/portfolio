@@ -73,7 +73,7 @@ const Contact = () => {
               <Button
                 variant="light"
                 href="mailto:sriramsingarapu2@gmail.com"
-                style={{ marginBottom: "2%", width: "100%" }}
+                style={{ marginBottom: "2%", width: "100%", marginTop: "4%" }}
               >
                 <FaEnvelope /> sriramsingarapu2@gmail.com
               </Button>
@@ -152,6 +152,7 @@ const Contact = () => {
                   padding: "0.75rem",
                   fontWeight: "bold",
                   borderRadius: "5px",
+                  marginTop: "2%",
                 }}
               >
                 Send

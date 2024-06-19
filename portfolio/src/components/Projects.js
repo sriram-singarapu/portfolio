@@ -91,7 +91,14 @@ const Projects = () => {
               <Col xs={12} md={7}>
                 <Card.Text className="mb-4">
                   {project.description.map((desc, descIndex) => (
-                    <li key={descIndex}>{desc}</li>
+                    <li
+                      key={descIndex}
+                      style={{
+                        fontSize: "16px",
+                      }}
+                    >
+                      {desc}
+                    </li>
                   ))}
                 </Card.Text>
                 <Button
