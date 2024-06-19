@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import "./App.css";
+import Activities from "./components/Activities";
 
 const App = () => {
   const [theme, setTheme] = useState("light"); // Default theme is light
@@ -21,6 +22,7 @@ const App = () => {
       <About />
       <Skills />
       <Projects />
+      <Activities />
       <Contact />
     </div>
   );

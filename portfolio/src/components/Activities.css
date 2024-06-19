@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  .activities-container {
+    flex-direction: column;
+  }
+
+  .activities-text {
+    margin-bottom: 20px;
+  }
+}

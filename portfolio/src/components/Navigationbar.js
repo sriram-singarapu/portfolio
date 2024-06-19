@@ -14,17 +14,14 @@ const NavigationBar = ({ toggleTheme, currentTheme }) => {
       }}
     >
       <Container>
-        <Navbar.Brand
-          href="#home"
-          style={{ fontFamily: "monospace" }}
-          className="fs-4 "
-        >
+        <Navbar.Brand href="#home" className="fs-5 ">
           <Image
             style={{
-              margin: "10px",
+              margin: "3px",
               width: "auto",
-              height: "35px",
+              height: "33px",
               filter: "invert(100%)",
+              borderRadius: "50%",
             }}
             src={sr}
             alt="sr"
@@ -75,6 +72,16 @@ const NavigationBar = ({ toggleTheme, currentTheme }) => {
               }}
             >
               Projects
+            </Nav.Link>
+            <Nav.Link
+              href="#activities"
+              className="me-2"
+              style={{
+                fontSize: "16px",
+                fontWeight: "bold",
+              }}
+            >
+              Activities
             </Nav.Link>
             <Nav.Link
               href="#contact"
