@@ -8,10 +8,17 @@ const NavigationBar = ({ toggleTheme, currentTheme }) => {
       expand="md"
       className="bg-body-tertiary"
       fixed="top"
-      style={{ boxShadow: "0 2px 4px rgba(0,0,0,0.1)" }}
+      style={{
+        boxShadow:
+          currentTheme === "light" ? "0 2px 4px rgba(0,0,0,0.1)" : "none",
+      }}
     >
       <Container>
-        <Navbar.Brand href="#home" className="fs-4 ">
+        <Navbar.Brand
+          href="#home"
+          style={{ fontFamily: "Comic Sans MS, Comic Sans, cursive" }}
+          className="fs-4 "
+        >
           <Image
             style={{
               margin: "10px",
@@ -22,7 +29,7 @@ const NavigationBar = ({ toggleTheme, currentTheme }) => {
             src={sr}
             alt="sr"
           />
-          Sri Ram Singarapu{"        "}
+          Sri Ram Singarapu
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -82,11 +89,10 @@ const NavigationBar = ({ toggleTheme, currentTheme }) => {
           </Nav>
         </Navbar.Collapse>
         <Button
-          className="me-2"
           onClick={toggleTheme}
           variant={currentTheme === "light" ? "dark" : "light"}
         >
-          {currentTheme === "light" ? "Dark" : "Light"} Mode
+          {currentTheme === "light" ? "Dark" : "Light"}
         </Button>
       </Container>
     </Navbar>

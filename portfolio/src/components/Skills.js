@@ -8,6 +8,7 @@ import react from "../assests/react.png";
 import github from "../assests/github.png";
 import azure from "../assests/azure.png";
 import mysql from "../assests/mysql.png";
+import csstailwind from "../assests/css-tailwind.png";
 
 const Skills = () => {
   const skills = [
@@ -19,6 +20,7 @@ const Skills = () => {
     { name: "GitHub", image: github },
     { name: "Microsoft Azure", image: azure },
     { name: "MySQL", image: mysql },
+    { name: "Tailwind CSS", image: csstailwind },
   ];
 
   const cardStyle = {
@@ -51,7 +53,8 @@ const Skills = () => {
               fontSize: "30px",
               color: "#10B981",
               fontWeight: "bold",
-              margin: 0,
+              margin: " 0% 5% 0% 5%",
+              fontFamily: "Arial, sans-serif",
             }}
           >
             My Skills...
@@ -62,8 +65,8 @@ const Skills = () => {
             <Col
               key={index}
               xs={6}
-              sm={6}
-              md={5}
+              sm={4}
+              md={3}
               lg={2}
               xl={2}
               className="mb-4"

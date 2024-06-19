@@ -54,6 +54,7 @@ const Contact = () => {
           marginBottom: "2%",
           backgroundColor: "#A7F3D0",
           padding: "10px",
+          fontFamily: "Arial, sans-serif",
         }}
       >
         Contact Information

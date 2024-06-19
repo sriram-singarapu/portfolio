@@ -14,7 +14,7 @@ const About = () => {
                   width: "90%",
 
                   borderRadius: "10%",
-                  margin: "5%",
+                  margin: "1%",
                 }}
                 src={about}
               />
@@ -23,11 +23,12 @@ const About = () => {
               <Card.Title>
                 <h3
                   style={{
-                    marginBottom: "2%",
+                    margin: "5% 0% 5% 0%",
                     fontWeight: "bold",
                     color: "#10B981",
                     padding: "10px",
                     backgroundColor: "#A7F3D0",
+                    fontFamily: "Arial, sans-serif",
                   }}
                 >
                   About Me
@@ -35,14 +36,15 @@ const About = () => {
               </Card.Title>
               <Card.Text
                 style={{
-                  fontSize: "16px",
+                  fontSize: "18px",
+                  fontFamily: "Apple Chancery, cursive",
                 }}
               >
-                As a fresher, I have a strong foundation in web development,
-                focusing on creating dynamic and user-friendly web applications.
-                I have hands-on experience with various technologies, including
-                JavaScript, React, HTML, CSS, Bootstrap, GitHub, Microsoft
-                Azure, and MySQL.
+                As a fresher, I have a strong foundation in web
+                development,focusing on creating dynamic and user-friendly web
+                applications. I have hands-on experience with various
+                technologies, including JavaScript, React, HTML, CSS, Bootstrap,
+                GitHub, Microsoft Azure, and MySQL.
                 <br /> I am eager to learn and grow as a developer, and I am
                 excited about the opportunities that lie ahead in the field of
                 web development.

@@ -39,7 +39,7 @@ const projectsData = [
     liveServerLink: "https://sriram-singarapu.github.io/react-restaurant/",
   },
   {
-    title: "Portfolio [# This Website]",
+    title: "Portfolio [#This Website]",
     video: portfolio,
     description: [
       "Showcases my projects and skills with a clean, modern design. Features responsive layout, interactive elements, and optimized performance for an engaging user experience.",
@@ -66,7 +66,7 @@ const Projects = () => {
           backgroundColor: "#A7F3D0",
           padding: "10px",
           textAlign: "center",
-          margin: "0%",
+          margin: "0% ",
         }}
       >
         <h2
@@ -75,6 +75,8 @@ const Projects = () => {
             fontSize: "30px",
             color: "#10B981",
             fontWeight: "bold",
+            margin: "0% 5% 0% 5%",
+            fontFamily: "Arial, sans-serif",
           }}
         >
           Projects
@@ -86,7 +88,15 @@ const Projects = () => {
             <Row className="align-items-center">
               <Col xs={12}>
                 <Card.Title className="text-center mb-4">
-                  <strong>{project.title}</strong>
+                  <strong
+                    style={{
+                      fontFamily: "Arial, sans-serif",
+                      textDecorationLine: "underline",
+                      textDecorationColor: "greenyellow",
+                    }}
+                  >
+                    {project.title}
+                  </strong>
                 </Card.Title>
               </Col>
               <Col xs={12} md={5} className="mb-3 mb-md-0">
@@ -104,7 +114,8 @@ const Projects = () => {
                     <li
                       key={descIndex}
                       style={{
-                        fontSize: "16px",
+                        fontSize: "18px",
+                        fontFamily: "Apple Chancery, cursive",
                       }}
                     >
                       {desc}

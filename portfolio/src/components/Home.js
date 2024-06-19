@@ -9,10 +9,10 @@ import resume from "../assests/SriRam-Singarapu.pdf";
 import { Button, Card, Container, Row, Col, Image } from "react-bootstrap";
 import { FaRegMessage } from "react-icons/fa6";
 
-const Home = () => {
+const Home = ({ toggleTheme, currentTheme }) => {
   return (
     <Fragment>
-      <section id="home" style={{ margin: "5%", marginTop: "110px" }}>
+      <section id="home" className="pt-lg-2  pt-5">
         <Card
           style={{ width: "auto", margin: "3% 12% 3% 12%", border: "none" }}
         >
@@ -20,20 +20,29 @@ const Home = () => {
             <Row className="align-items-center">
               <Col xs={12} md={8}>
                 <Card.Title>
-                  <h1>Front-End React Developer</h1>
+                  <h1 style={{ fontFamily: "cursive, fantasy" }}>
+                    Front-End React Developer
+                  </h1>
                 </Card.Title>
                 <Card.Text
                   style={{
                     margin: "2% 0% 2% 0%",
                     fontSize: "16px",
-                    fontWeight: "bold",
+                    //fontWeight: "bold",
+                    fontFamily: "Apple Chancery, cursive",
                   }}
                 >
-                  Hi, I'm Sri Ram Singarapu. A passionate Front-end React
-                  developer based in Hyderabad.
+                  <h5>
+                    Hi, I'm Sri Ram Singarapu. A passionate Front-end React
+                    developer based in Hyderabad.
+                  </h5>
                 </Card.Text>
                 <Button
-                  style={{ margin: "2% 2% 0 0" }}
+                  style={{
+                    border:
+                      currentTheme === "dark" ? "1px solid white" : "none",
+                    margin: "2% 2% 0 0",
+                  }}
                   variant="dark"
                   href="#contact"
                 >
@@ -41,7 +50,11 @@ const Home = () => {
                   Hire Me <FaRegMessage />
                 </Button>
                 <Button
-                  style={{ marginTop: "2%" }}
+                  style={{
+                    border:
+                      currentTheme === "dark" ? "1px solid white" : "none",
+                    marginTop: "2%",
+                  }}
                   variant="dark"
                   href={resume}
                   download="SriRam-Singarapu-resume"
