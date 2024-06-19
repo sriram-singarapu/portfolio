@@ -20,7 +20,7 @@ const Home = ({ toggleTheme, currentTheme }) => {
             <Row className="align-items-center">
               <Col xs={12} md={8}>
                 <Card.Title>
-                  <h1 style={{ fontFamily: "cursive, fantasy" }}>
+                  <h1 style={{ fontFamily: "Times New Roman, fantasy" }}>
                     Front-End React Developer
                   </h1>
                 </Card.Title>
@@ -29,7 +29,7 @@ const Home = ({ toggleTheme, currentTheme }) => {
                     margin: "2% 0% 2% 0%",
                     fontSize: "16px",
                     //fontWeight: "bold",
-                    fontFamily: "Apple Chancery, cursive",
+                    fontFamily: "monospace",
                   }}
                 >
                   <h5>

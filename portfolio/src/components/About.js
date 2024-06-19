@@ -37,7 +37,7 @@ const About = () => {
               <Card.Text
                 style={{
                   fontSize: "18px",
-                  fontFamily: "Apple Chancery, cursive",
+                  fontFamily: "monospace",
                 }}
               >
                 As a fresher, I have a strong foundation in web

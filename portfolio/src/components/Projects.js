@@ -115,7 +115,7 @@ const Projects = () => {
                       key={descIndex}
                       style={{
                         fontSize: "18px",
-                        fontFamily: "Apple Chancery, cursive",
+                        fontFamily: "monospace",
                       }}
                     >
                       {desc}

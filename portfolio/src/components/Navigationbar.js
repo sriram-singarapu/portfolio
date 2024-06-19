@@ -16,7 +16,7 @@ const NavigationBar = ({ toggleTheme, currentTheme }) => {
       <Container>
         <Navbar.Brand
           href="#home"
-          style={{ fontFamily: "Comic Sans MS, Comic Sans, cursive" }}
+          style={{ fontFamily: "monospace" }}
           className="fs-4 "
         >
           <Image
