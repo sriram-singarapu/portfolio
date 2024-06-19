@@ -1,0 +1,2 @@
+.projects-section{margin:5%}.project-card{border:2px solid skyblue;border-radius:10px;margin:3% auto;padding:1%;transition:transform .2s ease-in-out;width:80%}.project-card:hover{transform:scale(1.05)}.project-video{border-radius:10px;width:100%}@media (max-width:768px){.project-card{width:90%}}@media (max-width:576px){.project-card{width:100%}.project-video{margin-bottom:20px}}body,html{height:100%;margin:0;padding:0}.app.light{background-color:#fff;color:#000}.app.dark{background-color:#212529;color:#fff}section{margin:20px}
+/*# sourceMappingURL=main.659877fe.css.map*/
