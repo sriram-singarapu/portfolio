@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import todo from "../projectsvideo/todo app.mp4";
 import expense from "../projectsvideo/Expense.mp4";
 import restaurant from "../projectsvideo/Restaurant.mp4";
+import portfolio from "../projectsvideo/Portfolio.mp4";
 import "./Projects.css";
 
 const projectsData = [
@@ -36,6 +37,15 @@ const projectsData = [
     ],
     githubLink: "https://github.com/sriram-singarapu/react-restaurant",
     liveServerLink: "https://sriram-singarapu.github.io/react-restaurant/",
+  },
+  {
+    title: "Portfolio [# This Website]",
+    video: portfolio,
+    description: [
+      "Showcases my projects and skills with a clean, modern design. Features responsive layout, interactive elements, and optimized performance for an engaging user experience.",
+    ],
+    githubLink: "https://github.com/sriram-singarapu/portfolio",
+    liveServerLink: "https://sriram-singarapu.github.io/portfolio/",
   },
 ];
 
