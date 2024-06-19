@@ -1,7 +1,7 @@
-import { Container, Nav, Navbar, Image } from "react-bootstrap";
+import { Container, Nav, Navbar, Image, Button } from "react-bootstrap";
 import sr from "../assests/Sr.png";
 
-const NavigationBar = () => {
+const NavigationBar = ({ toggleTheme, currentTheme }) => {
   return (
     <Navbar
       collapseOnSelect
@@ -22,9 +22,11 @@ const NavigationBar = () => {
             src={sr}
             alt="sr"
           />
-          Sri Ram Singarapu
+          Sri Ram Singarapu{"        "}
         </Navbar.Brand>
+
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link
@@ -79,6 +81,13 @@ const NavigationBar = () => {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
+        <Button
+          className="me-2"
+          onClick={toggleTheme}
+          variant={currentTheme === "light" ? "dark" : "light"}
+        >
+          {currentTheme === "light" ? "Dark" : "Light"} Mode
+        </Button>
       </Container>
     </Navbar>
   );

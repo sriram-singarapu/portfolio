@@ -16,8 +16,8 @@ const App = () => {
 
   return (
     <div className={`app ${theme}`} data-bs-theme={theme}>
-      <NavigationBar />
-      <Home toggleTheme={toggleTheme} currentTheme={theme} />
+      <NavigationBar toggleTheme={toggleTheme} currentTheme={theme} />
+      <Home />
       <About />
       <Skills />
       <Projects />

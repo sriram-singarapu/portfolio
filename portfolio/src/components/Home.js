@@ -9,17 +9,10 @@ import resume from "../assests/SriRam-Singarapu.pdf";
 import { Button, Card, Container, Row, Col, Image } from "react-bootstrap";
 import { FaRegMessage } from "react-icons/fa6";
 
-const Home = ({ toggleTheme, currentTheme }) => {
+const Home = () => {
   return (
     <Fragment>
-      <Button
-        style={{ marginTop: "100px", marginLeft: "86%" }}
-        onClick={toggleTheme}
-        variant={currentTheme === "light" ? "dark" : "light"}
-      >
-        {currentTheme === "light" ? "Dark" : "Light"} Mode
-      </Button>
-      <section id="home" style={{ margin: "5%", marginTop: "2%" }}>
+      <section id="home" style={{ margin: "5%", marginTop: "110px" }}>
         <Card
           style={{ width: "auto", margin: "3% 12% 3% 12%", border: "none" }}
         >
