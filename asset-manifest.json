@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.04fe39f1.css",
-    "main.js": "/portfolio/static/js/main.75ce751a.js",
+    "main.js": "/portfolio/static/js/main.bf48646a.js",
     "static/media/Expense.mp4": "/portfolio/static/media/Expense.6ed0328d6c6227ab5a68.mp4",
     "static/media/Portfolio.mp4": "/portfolio/static/media/Portfolio.531e8ca7bdd485acf34d.mp4",
     "static/media/todo app.mp4": "/portfolio/static/media/todo app.5f30c2affb7517311265.mp4",
@@ -11,7 +11,6 @@
     "static/media/sr-ma.png": "/portfolio/static/media/sr-ma.14a1848325a69a0b51dd.png",
     "static/media/about.png": "/portfolio/static/media/about.65a6c4dc228009c8106f.png",
     "static/media/photo.png": "/portfolio/static/media/photo.a4ed459af6e97402e767.png",
-    "static/media/css-tailwind.png": "/portfolio/static/media/css-tailwind.f0f26047a8933b822dae.png",
     "static/media/SriRam-Singarapu.pdf": "/portfolio/static/media/SriRam-Singarapu.f21cab88f05e7348cddc.pdf",
     "static/media/react.png": "/portfolio/static/media/react.ee618307265038b97d52.png",
     "static/media/mysql.png": "/portfolio/static/media/mysql.60fe462b4dec8bbc0292.png",
@@ -23,10 +22,10 @@
     "static/media/js.png": "/portfolio/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/portfolio/index.html",
     "main.04fe39f1.css.map": "/portfolio/static/css/main.04fe39f1.css.map",
-    "main.75ce751a.js.map": "/portfolio/static/js/main.75ce751a.js.map"
+    "main.bf48646a.js.map": "/portfolio/static/js/main.bf48646a.js.map"
   },
   "entrypoints": [
     "static/css/main.04fe39f1.css",
-    "static/js/main.75ce751a.js"
+    "static/js/main.bf48646a.js"
   ]
 }
