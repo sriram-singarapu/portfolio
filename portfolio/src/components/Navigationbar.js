@@ -1,4 +1,5 @@
 import { Container, Nav, Navbar, Image, Button } from "react-bootstrap";
+
 import sr from "../assests/Sr.png";
 
 const NavigationBar = ({ toggleTheme, currentTheme }) => {
@@ -14,7 +15,7 @@ const NavigationBar = ({ toggleTheme, currentTheme }) => {
       }}
     >
       <Container>
-        <Navbar.Brand href="#home" className="fs-5 ">
+        <Navbar.Brand href="#home" className="fs-5">
           <Image
             style={{
               margin: "3px",
@@ -83,6 +84,7 @@ const NavigationBar = ({ toggleTheme, currentTheme }) => {
             >
               Activities
             </Nav.Link>
+
             <Nav.Link
               href="#contact"
               className="me-2"

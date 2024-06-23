@@ -63,19 +63,20 @@ const Projects = () => {
       <div
         style={{
           width: "100%",
-          backgroundColor: "#A7F3D0",
-          padding: "10px",
+
           textAlign: "center",
-          margin: "0% ",
         }}
       >
         <h2
           className="text-center"
           style={{
             fontSize: "30px",
+            padding: "10px",
+            margin: " 0% 10% 0% 10%",
+            backgroundColor: "#A7F3D0",
             color: "#10B981",
             fontWeight: "bold",
-            margin: "0% 5% 0% 5%",
+
             fontFamily: "Arial, sans-serif",
           }}
         >

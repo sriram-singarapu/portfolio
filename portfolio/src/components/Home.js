@@ -33,8 +33,11 @@ const Home = ({ toggleTheme, currentTheme }) => {
                   }}
                 >
                   <h5>
-                    Hi, I'm Sri Ram Singarapu. A passionate Front-end React
-                    developer based in Hyderabad.
+                    Hi,{" "}
+                    <strong style={{ color: "#35B1DA" }}>
+                      I'm Sri Ram Singarapu
+                    </strong>
+                    . A passionate Front-end React developer based in Hyderabad.
                   </h5>
                 </Card.Text>
                 <Button

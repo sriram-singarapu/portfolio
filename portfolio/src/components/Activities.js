@@ -70,7 +70,7 @@ const Activities = () => {
                     style={{
                       width: "100%",
                       height: "350px",
-                      objectFit: "cover",
+                      objectFit: "contain",
                     }}
                   />
                   <Carousel.Caption>
@@ -103,7 +103,7 @@ const Activities = () => {
                     style={{
                       width: "100%",
                       height: "350px",
-                      objectFit: "cover",
+                      objectFit: "contain",
                     }}
                   />
                 </Carousel.Item>
