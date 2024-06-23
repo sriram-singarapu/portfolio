@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Card, Container, Row, Col } from "react-bootstrap";
 import { FaGithub } from "react-icons/fa";
+import { BsForwardFill } from "react-icons/bs";
 import todo from "../projectsvideo/todo app.mp4";
 import expense from "../projectsvideo/Expense.mp4";
 import restaurant from "../projectsvideo/Restaurant.mp4";
@@ -117,8 +118,10 @@ const Projects = () => {
                       style={{
                         fontSize: "18px",
                         fontFamily: "monospace",
+                        listStyle: "none",
                       }}
                     >
+                      <BsForwardFill />
                       {desc}
                     </li>
                   ))}

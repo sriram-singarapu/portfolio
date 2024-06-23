@@ -8,7 +8,7 @@ import react from "../assests/react.png";
 import github from "../assests/github.png";
 import azure from "../assests/azure.png";
 import mysql from "../assests/mysql.png";
-import csstailwind from "../assests/css-tailwind.png";
+//import csstailwind from "../assests/css-tailwind.png";
 
 const Skills = () => {
   const skills = [
@@ -20,7 +20,7 @@ const Skills = () => {
     { name: "GitHub", image: github },
     { name: "Microsoft Azure", image: azure },
     { name: "MySQL", image: mysql },
-    { name: "Tailwind CSS", image: csstailwind },
+    //{ name: "Tailwind CSS", image: csstailwind },
   ];
 
   const cardStyle = {
